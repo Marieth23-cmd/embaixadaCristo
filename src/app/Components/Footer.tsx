@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gray-800 text-white py-10 mt-10">
       <div className="max-w-[1500px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 items-start">
 
-        {/* Eventos */}
+        {/* Eventos só para teste  */}
         <div className="cursor-pointer">
           <h2 className="font-semibold mb-3">Eventos</h2>
           <p>Servir</p>
