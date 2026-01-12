@@ -1,13 +1,14 @@
 "use client";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import QuemSomos from "./Components/QuemSomos";
+import ViverFe from "./Components/ViverFe";
 import Hero from "./Components/Hero";
 import {FiSun ,FiMoon} from "react-icons/fi";
 import { useEffect, useState } from "react";
 
  
-
- export default function HomePage(){
+export default function HomePage(){
   const [dark, setDark] = useState(false);
 
   useEffect(()=>{
@@ -48,8 +49,11 @@ import { useEffect, useState } from "react";
         <Header/>
         <div>
         <Hero/>
+        <QuemSomos/>
+        <ViverFe/>
         </div>
         <Footer/>
+        
 
         
         

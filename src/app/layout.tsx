@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {EB_Garamond} from 'next/font/google';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
   description: "Site oficial da Embaixada do Reino de Cristo-Reconciliando as nações com Deus",
 };
 
+const ebGaramond = EB_Garamond({
+  subsets: ['latin'],
+  variable: '--font-eb-garamond',
+  weight: ['400', '700'],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} antialiased`}
       >
         {children}
       </body>
