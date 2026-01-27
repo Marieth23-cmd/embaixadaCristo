@@ -6,6 +6,7 @@ import ViverFe from "./Components/ViverFe";
 import Hero from "./Components/Hero";
 import {FiSun ,FiMoon} from "react-icons/fi";
 import { useEffect, useState } from "react";
+import MapaIgreja from "./Components/MapaIgreja";
 
  
 export default function HomePage(){
@@ -51,7 +52,9 @@ export default function HomePage(){
         <Hero/>
         <QuemSomos/>
         <ViverFe/>
+        <MapaIgreja/>
         </div>
+        
         <Footer/>
         
 
