@@ -4,8 +4,23 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+
+  const menu = [
+    { label: "Início", href: "/" },
+    { label: "Dar", href: "/Dar" },
+    { label: "Eventos", href: "/Eventos" },
+    { label: "Servir", href: "/Servir" },
+    { label: "Galeria", href: "/galeria" }
+  ];
+
+
+ const [isopen, setIsOpen] = useState(false);
+ const [ismenuopen, setIsMenuOpen] = useState(false);
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,11 +32,19 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+
+
+   const pathname = usePathname();
+  const ishome= pathname === "/";
+  const isTransparent = ishome && !scrolled;
+
+
   return (
     <header
       className={`
         fixed left-0 right-0 z-20 transition-all duration-300
-        ${scrolled ? "bg-white shadow-md" : "bg-transparent"}
+        ${
+        isTransparent ? "bg-transparent" : "bg-white shadow-md"}
       `}
     >
       <div className="max-w-[1100px] mx-auto px-4 py-3 flex justify-between items-center">
@@ -44,22 +67,23 @@ export default function Header() {
         </div>
 
         {/* Navegação */}
-        <nav>
-          <ul className="flex gap-6 items-center">
-            {["Início", "Sobre", "Dar", "Eventos", "Servir"].map((item) => (
-              <li
-                key={item}
-                className={`
-                  hidden lg:block cursor-pointer transition-colors
-                  ${scrolled
-                    ? "text-gray-800 hover:text-blue-600"
-                    : "text-white hover:text-blue-300"}
-                `}
-              >
-                {item}
-              </li>
-            ))}
-
+      <nav>
+  <ul className="flex gap-6 items-center">
+    {menu.map((item) => (
+      <li key={item.label} className="hidden lg:block">
+        <Link
+          href={item.href}
+          className={`
+            cursor-pointer transition-colors
+            ${isTransparent
+              ? "text-white hover:text-blue-300"
+              : "text-gray-800 hover:text-blue-600"}
+          `}
+        >
+          {item.label}
+        </Link>
+      </li>
+    ))}
             <IoPersonCircleOutline
               size={24}
               className={`cursor-pointer transition-colors ${

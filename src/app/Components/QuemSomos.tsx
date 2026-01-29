@@ -7,10 +7,10 @@ export default function Lideranca() {
       {/* Decoração de fundo */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-[1500px] mx-auto relative z-10">
+      <div className="max-w-[1600px] mx-auto relative z-10">
         {/* Cabeçalho da seção */}
         <div className="text-center mb-6 md:mb-8">
           <div className="inline-block mb-4">
@@ -33,7 +33,7 @@ export default function Lideranca() {
           </p>
         </div>
 
-        {/* Container principal com flex - Duas divs lado a lado */}
+        {/* Container principal com apenas uma div */}
         <div className="flex flex-col lg:flex-row gap-8 md:gap-10">
           
           {/* DIV 1: Pastores Seniores - Destaque Principal */}
@@ -148,7 +148,7 @@ export default function Lideranca() {
               {/* Grid de pastores auxiliares */}
               <div className="grid gap-6 flex-1">
                 {/* Pastor 1 */}
-                <div className="group bg-white rounded-2xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                <div className="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
                   <div className="flex gap-5 items-start">
                     <div className="flex-shrink-0">
                       <div className="relative w-20 h-20 rounded-xl overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all">
@@ -177,7 +177,7 @@ export default function Lideranca() {
                 
 
                 {/* Pastor 2 */}
-                <div className="group bg-white rounded-2xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
+                <div className="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
                   <div className="flex gap-5 items-start">
                     <div className="flex-shrink-0">
                       <div className="relative w-20 h-20 rounded-xl overflow-hidden ring-4 ring-purple-100 group-hover:ring-purple-200 transition-all">
@@ -207,7 +207,7 @@ export default function Lideranca() {
                 </div>
 
                 {/* Pastor 3 */}
-                <div className="group bg-white rounded-2xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                <div className="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
                   <div className="flex gap-5 items-start">
                     <div className="flex-shrink-0">
                       <div className="relative w-20 h-20 rounded-xl overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all">
@@ -236,7 +236,7 @@ export default function Lideranca() {
 
                 {/* Pastor 4 */}
                  
-                <div className="group bg-white rounded-2xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
+                <div className="group bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
                   <div className="flex gap-5 items-start">
                     <div className="flex-shrink-0">
                       <div className="relative w-20 h-20 rounded-xl overflow-hidden ring-4 ring-purple-100 group-hover:ring-purple-200 transition-all">

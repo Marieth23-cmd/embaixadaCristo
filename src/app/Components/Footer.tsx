@@ -2,7 +2,7 @@ import { FaFacebook, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-10 mt-10">
+    <footer className="bg-gray-800 text-white py-10 ">
       <div className="max-w-[1500px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 items-start">
 
         {/* Eventos só para teste  */}

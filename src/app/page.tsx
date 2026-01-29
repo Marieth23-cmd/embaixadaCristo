@@ -7,6 +7,8 @@ import Hero from "./Components/Hero";
 import {FiSun ,FiMoon} from "react-icons/fi";
 import { useEffect, useState } from "react";
 import MapaIgreja from "./Components/MapaIgreja";
+import CalendarioCultos from "./Components/CalendarioCultos";
+import MomentosNoCulto from "./Components/MomentosNoCulto";
 
  
 export default function HomePage(){
@@ -50,11 +52,14 @@ export default function HomePage(){
         <Header/>
         <div>
         <Hero/>
-        <QuemSomos/>
+        <QuemSomos/> 
+        <CalendarioCultos/>
         <ViverFe/>
-        <MapaIgreja/>
+        <MomentosNoCulto/>
+       
+       
         </div>
-        
+         <MapaIgreja/>
         <Footer/>
         
 

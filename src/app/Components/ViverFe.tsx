@@ -66,7 +66,7 @@ export default function ViverFe() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-[1500px] mx-auto relative z-10">
+      <div className="max-w-[1600px] mx-auto relative z-10">
         {/* Cabeçalho */}
         <div className="text-center max-w-3xl mx-auto mb-6 md:mb-8">
           <div className="inline-block mb-4">
