@@ -18,9 +18,6 @@ export default function Header() {
   ];
 
 
- const [isopen, setIsOpen] = useState(false);
- const [ismenuopen, setIsMenuOpen] = useState(false);
-
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

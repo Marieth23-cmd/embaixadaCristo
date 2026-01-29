@@ -9,16 +9,6 @@ type Evento = {
   icone: string;
 };
 
-type DiasMes = {
-  numero: number;
-  diaSemana: number;
-  eventos: Evento[];
-};
-
-
-
-
-
 export default function CalendarioCultos() {
   const [mesSelecionado, setMesSelecionado] = useState(new Date().getMonth());
   const [anoSelecionado, setAnoSelecionado] = useState(new Date().getFullYear());
