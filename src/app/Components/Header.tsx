@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa";
@@ -10,7 +9,6 @@ import { usePathname } from "next/navigation";
 export default function Header() {
 
   const menu = [
-    { label: "Início", href: "/" },
     { label: "Dar", href: "/Dar" },
     { label: "Eventos", href: "/Eventos" },
     { label: "Servir", href: "/Servir" },
@@ -39,57 +37,69 @@ export default function Header() {
   return (
     <header
       className={`
-        fixed left-0 right-0 z-20 transition-all duration-300
+       fixed left-0 top-0 w-full z-20 transition-colors
         ${
         isTransparent ? "bg-transparent" : "bg-white shadow-md"}
       `}
     >
-      <div className="max-w-[1100px] mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="max-w-[1500px] mx-auto px-6 md:px-8 backdrop-blur-md py-4 flex justify-between items-center">
         
         {/* Logo */}
-        <div className="flex gap-2 items-center">
-          <FaBars
-            size={22}
-            className={`cursor-pointer transition-colors ${
-              scrolled ? "text-gray-800" : "text-white"
-            }`}
-          />
+        <div className="lg:ml-44">
+                                                         
 
+          <Link href="/" className="flex items-center gap-2">
           <Image src="/images/logo.jpg" alt="Logo" width={50} height={30} />
-
-          <div className={`${scrolled ? "text-gray-900" : "text-white"}`}>
-            <h1 className="text-lg font-semibold">Embaixada</h1>
-            <p className="text-sm opacity-90">do Reino de Cristo</p>
-          </div>
-        </div>
+             
+              <div className={`${isTransparent ? "text-white" : "text-gray-900"}`}>
+                <h1 className="text-lg font-semibold">Embaixada</h1>
+                <p className="text-sm opacity-90">do Reino de Cristo</p>
+              </div>
+              </Link>
+            </div>
+        
 
         {/* Navegação */}
-      <nav>
-  <ul className="flex gap-6 items-center">
-    {menu.map((item) => (
-      <li key={item.label} className="hidden lg:block">
-        <Link
-          href={item.href}
-          className={`
-            cursor-pointer transition-colors
-            ${isTransparent
-              ? "text-white hover:text-blue-300"
-              : "text-gray-800 hover:text-blue-600"}
-          `}
-        >
-          {item.label}
-        </Link>
-      </li>
-    ))}
-            <IoPersonCircleOutline
-              size={24}
-              className={`cursor-pointer transition-colors ${
-                scrolled ? "text-gray-800 hover:text-blue-600" : "text-white"
-              }`}
-            />
-          </ul>
+
+       
+      <nav className="lg:ml-44 hidden lg:block">
+          <ul className="flex gap-4 items-center whitespace-nowrap">
+            {menu.map((item) => (
+              <li key={item.label} >
+                <Link
+                  href={item.href}
+                  className={`
+                    cursor-pointer transition-colors
+                    ${isTransparent
+                      ? "text-white hover:text-blue-300"
+                      : "text-gray-800 hover:text-blue-600"}
+                  `}
+                >
+                    {item.label} 
+                    
+                    
+                  </Link>  
+                  
+                 
+                </li>
+              
+              ))}
+
+              
+              <IoPersonCircleOutline
+                size={24}
+                className={`cursor-pointer transition-colors ${
+                  scrolled ? "text-gray-800 hover:text-blue-600" : "text-white"
+                }`} />
+             
+            
+            </ul>
         </nav>
-      </div>
+
+
+          <FaBars size={24} className={`lg:hidden cursor-pointer ${isTransparent ? "text-white" : "text-gray-800"}`} />
+
+     </div>
     </header>
   );
 }

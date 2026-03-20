@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      
-   
+
+      {/*implemmentar versículos biblívicos animados no futuro  */}
       <video
         autoPlay
         muted
@@ -19,27 +19,28 @@ export default function Hero() {
       {/* ✨ Conteúdo */}
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 min-h-screen flex items-center">
         <div className="max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-6">
             Bem-vindo à <br />
             <span className="text-yellow-400">
               Embaixada do Reino de Cristo
             </span>
           </h1>
 
-          <p className="text-lg text-gray-200 mb-8">
+          <p className="text-base lg:text-lg text-gray-200 mb-8">
             Reconciliando as nações com Deus através do amor,
             da Palavra e do serviço.
           </p>
 
-          <div className="flex gap-4">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-xl transition">
+          <div className="flex flex-col md:flex-row lg:flex-row gap-4">
+            <button className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:bg-yellow-400 text-black font-semibold px-7 py-3.5 rounded-xl transition">
               Conheça a igreja
             </button>
 
-            <button className="border border-white text-white px-6 py-3 rounded-xl hover:bg-white/10 transition">
+            <button className="border border-white/30 text-white px-7 py-3.5 rounded-xl hover:bg-white/10 transition">
               Quero servir
             </button>
           </div>
+       
         </div>
       </div>
     </section>
