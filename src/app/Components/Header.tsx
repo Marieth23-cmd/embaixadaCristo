@@ -53,7 +53,7 @@ export default function Header() {
              
               <div className={`${isTransparent ? "text-white" : "text-gray-900"}`}>
                 <h1 className="text-lg font-semibold">Embaixada</h1>
-                <p className="text-sm opacity-90">do Reino de Cristo</p>
+                <p className="text-[0.8rem] opacity-90 italic">do Reino de Cristo</p>
               </div>
               </Link>
             </div>

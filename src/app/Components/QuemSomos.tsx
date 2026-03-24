@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function QuemSomos() {
   return (
-    <section className="bg-white py-14 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-white py-10 lg:py-14 px-6">
+      <div className="max-w-7xl mx-auto text-center">
 
         {/* Label topo */}
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#ecb80a] mb-4">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a227] mb-4">
           Quem Somos
         </p>
 
@@ -36,7 +36,7 @@ export default function QuemSomos() {
             Seja você quem for, de onde quer que venha — há um lugar para si aqui.
             Venha fazer parte desta família.
             {/* CTA */}
-         <Link href="#historia" className=" text-yellow-400 font-semibold text-lg px-8 py-3.5 rounded transition-colors">
+         <Link href="#historia" className=" text-[#c9a227] font-semibold text-lg px-8 py-3.5 rounded transition-colors">
           Conheça a nossa história
         </Link>
 
