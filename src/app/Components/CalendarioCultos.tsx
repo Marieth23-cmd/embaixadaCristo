@@ -6,8 +6,8 @@ const eventos = [
   { nome: "Culto Dominical",       hora: "08:00 – 10:30", diaSemana: "Domingo"  },
   { nome: "Culto de Ensino",       hora: "18:00 – 19:30", diaSemana: "Terça"    },
   { nome: "Culto da Vitória",      hora: "18:00 – 19:30", diaSemana: "Sexta"    },
-  { nome: "Evangelização",         hora: "Manhã",         diaSemana: "Sábado"   },
-  { nome: "Encontro de Senhoras",  hora: "Manhã",         diaSemana: "Sábado"   },
+  { nome: "Evangelização",         hora: "07:00 – 10:30", diaSemana: "Sábado"   },
+  { nome: "Encontro de Senhoras",  hora: "08:00 – 10:30", diaSemana: "Sábado"   },
 ];
 
 const diaAbrev: Record<string, string> = {

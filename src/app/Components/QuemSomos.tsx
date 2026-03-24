@@ -18,7 +18,7 @@ export default function QuemSomos() {
         {/* Faixa dourada de destaque */}
         <div className="bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 rounded-lg px-8 py-6 mb-10 text-left">
           <p className="text-[#0f1f3d] text-base lg:text-lg md:text-lg font-semibold leading-relaxed">
-            "Reconciliando as nações com Deus através do amor, da Palavra e do serviço."
+            &quot;Reconciliando as nações com Deus através do amor, da Palavra e do serviço.&quot;
           </p>
         </div>
 
